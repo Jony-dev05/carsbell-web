@@ -209,8 +209,8 @@ footer {
 
     body,
     html {
-        overflow-x: hidden;
-    }
+    scroll-behavior: smooth;
+}
 
     header {
         padding: 1rem 3%;
