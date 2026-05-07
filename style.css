@@ -101,14 +101,12 @@ footer {
     padding: 2rem;
     background: #333;
     color: white;
-}
 
-/* Ajustes para Celulares (Pantallas menores a 768px) */
+    /* Ajustes para Celulares (Pantallas menores a 768px) */
 @media (max-width: 768px) {
-
+    
     /* Evitamos que el contenido se salga por la derecha */
-    body,
-    html {
+    body, html {
         overflow-x: hidden;
     }
 
@@ -117,8 +115,7 @@ footer {
     }
 
     nav {
-        flex-direction: column;
-        /* Ponemos el logo arriba y el menú abajo */
+        flex-direction: column; /* Ponemos el logo arriba y el menú abajo */
         gap: 10px;
     }
 
@@ -127,13 +124,11 @@ footer {
     }
 
     nav ul li {
-        margin: 0 10px;
-        /* Reducimos el espacio entre links */
+        margin: 0 10px; /* Reducimos el espacio entre links */
     }
 
     nav ul li a {
-        font-size: 0.9rem;
-        /* Letra un poco más pequeña para que quepa */
+        font-size: 0.9rem; /* Letra un poco más pequeña para que quepa */
     }
 
     /* Ajustamos el texto principal para que no sea tan gigante */
@@ -145,4 +140,5 @@ footer {
         font-size: 1rem;
         padding: 0 10px;
     }
+}
 }
