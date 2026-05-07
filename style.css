@@ -139,6 +139,64 @@ footer {
     margin-bottom: 1rem;
 }
 
+.contact {
+    padding: 4rem 5%;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
+    background: #007bff;
+    color: white;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.contact-item:hover i {
+    color: white;
+}
+
 /* 3. Ajustes para Móvil (ESTO SIEMPRE AL FINAL DE TODO) */
 @media (max-width: 768px) {
     /* Aquí solo van las cosas que CAMBIAN en el cel */
