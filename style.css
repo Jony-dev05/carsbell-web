@@ -201,18 +201,75 @@ footer {
     color: white;
 }
 
-/* 3. Ajustes para Móvil (ESTO SIEMPRE AL FINAL DE TODO) */
-@media (max-width: 768px) {
-    /* Aquí solo van las cosas que CAMBIAN en el cel */
-    body, html { overflow-x: hidden; }
-    /* ... lo demás que ya tenías ... */
+.destinations {
+    padding: 5rem 5%;
+    background-color: #fff;
+    text-align: center;
 }
 
-/* --- Ajustes para Móvil (SIEMPRE AL FINAL) --- */
-@media (max-width: 768px) {
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
 
-    body,
-    html {
+.destinations .subtitle {
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.destinations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.dest_card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.dest_card:hover {
+    transform: translateY(-10px);
+}
+
+.dest_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.dest_info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.dest_info h3 {
+    margin-bottom: 0.8rem;
+    color: #1a1a1a;
+}
+
+.dest_info p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.dest_details {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* 3. Ajustes para Móvil (ESTO SIEMPRE AL FINAL DE TODO) */
+/* --- Ajustes para Móvil (UN SOLO BLOQUE PARA TODO) --- */
+@media (max-width: 768px) {
+    
+    body, html {
         overflow-x: hidden;
     }
 
@@ -242,16 +299,7 @@ footer {
         padding: 0 10px;
     }
 
-    @media (max-width: 768px) {
-    
-    /* ... lo que ya tenés (body, header, nav, hero) ... */
-
-    .hero p {
-        font-size: 1rem;
-        padding: 0 10px;
-    } /* Aquí termina lo que ya tenías */
-
-    /* PEGÁ LO NUEVO AQUÍ ABAJO: */
+    /* Ajustes de Contacto */
     .contact-container {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -269,5 +317,9 @@ footer {
         width: 100%;
         justify-content: center;
     }
-} /* <--- ESTA es la llave final que cierra todo el bloque móvil */
+
+    /* Ajuste de los Destinos Turísticos */
+    .dest_card img {
+        height: 180px;
+    }
 }
