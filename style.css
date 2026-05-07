@@ -237,4 +237,33 @@ footer {
         font-size: 1rem;
         padding: 0 10px;
     }
+
+    @media (max-width: 768px) {
+    
+    /* ... lo que ya tenés (body, header, nav, hero) ... */
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    } /* Aquí termina lo que ya tenías */
+
+    /* PEGÁ LO NUEVO AQUÍ ABAJO: */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-methods {
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        justify-content: center;
+    }
+} /* <--- ESTA es la llave final que cierra todo el bloque móvil */
 }
