@@ -102,3 +102,47 @@ footer {
     background: #333;
     color: white;
 }
+
+/* Ajustes para Celulares (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+
+    /* Evitamos que el contenido se salga por la derecha */
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        padding: 1rem 3%;
+    }
+
+    nav {
+        flex-direction: column;
+        /* Ponemos el logo arriba y el menú abajo */
+        gap: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        /* Reducimos el espacio entre links */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        /* Letra un poco más pequeña para que quepa */
+    }
+
+    /* Ajustamos el texto principal para que no sea tan gigante */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
