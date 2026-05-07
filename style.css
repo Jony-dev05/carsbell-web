@@ -89,6 +89,25 @@ nav ul li a:hover {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
+
+    .btn-whatsapp {
+        display: inline-block;
+        /* Importante para que tome el padding */
+        text-decoration: none;
+        /* Quita la rayita de los links */
+        padding: 12px 30px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+        background-color: #0056b3;
+        color: white;
+    }
 }
 
 .hero button:hover {
@@ -103,42 +122,46 @@ footer {
     color: white;
 
     /* Ajustes para Celulares (Pantallas menores a 768px) */
-@media (max-width: 768px) {
-    
-    /* Evitamos que el contenido se salga por la derecha */
-    body, html {
-        overflow-x: hidden;
-    }
+    @media (max-width: 768px) {
 
-    header {
-        padding: 1rem 3%;
-    }
+        /* Evitamos que el contenido se salga por la derecha */
+        body,
+        html {
+            overflow-x: hidden;
+        }
 
-    nav {
-        flex-direction: column; /* Ponemos el logo arriba y el menú abajo */
-        gap: 10px;
-    }
+        header {
+            padding: 1rem 3%;
+        }
 
-    nav ul {
-        padding: 0;
-    }
+        nav {
+            flex-direction: column;
+            /* Ponemos el logo arriba y el menú abajo */
+            gap: 10px;
+        }
 
-    nav ul li {
-        margin: 0 10px; /* Reducimos el espacio entre links */
-    }
+        nav ul {
+            padding: 0;
+        }
 
-    nav ul li a {
-        font-size: 0.9rem; /* Letra un poco más pequeña para que quepa */
-    }
+        nav ul li {
+            margin: 0 10px;
+            /* Reducimos el espacio entre links */
+        }
 
-    /* Ajustamos el texto principal para que no sea tan gigante */
-    .hero h1 {
-        font-size: 2rem;
-    }
+        nav ul li a {
+            font-size: 0.9rem;
+            /* Letra un poco más pequeña para que quepa */
+        }
 
-    .hero p {
-        font-size: 1rem;
-        padding: 0 10px;
+        /* Ajustamos el texto principal para que no sea tan gigante */
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            padding: 0 10px;
+        }
     }
-}
 }
